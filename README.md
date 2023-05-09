@@ -1,7 +1,7 @@
 # RethinkingImageCropping-Paddle (CVPR 2022)
 PaddlePaddle Implementation of "Rethinking Image Cropping: Exploring Diverse Compositions from Global Views"
 
-[[CVPR2022]([https://arxiv.org/abs/2211.11167](https://openaccess.thecvf.com/content/CVPR2022/html/Jia_Rethinking_Image_Cropping_Exploring_Diverse_Compositions_From_Global_Views_CVPR_2022_paper.html))]
+[[CVPR2022](https://openaccess.thecvf.com/content/CVPR2022/html/Jia_Rethinking_Image_Cropping_Exploring_Diverse_Compositions_From_Global_Views_CVPR_2022_paper.html))]
 
 ###  Introduction
 
