@@ -1,0 +1,31 @@
+CUDA_VISIBLE_DEVICES=0,1 \
+python -m torch.distributed.launch \
+    --nproc_per_node=2 \
+    --use_env \
+    /data1/ConditionalDETR_ImageCropping/main_ap.py \
+--batch_size 1 \
+--lr 0.0001 \
+--lr_backbone 0.00001 \
+--lr_drop 40 \
+--epochs 70 \
+--backbone 'resnet50' \
+--dilation \
+--enc_layers 6 \
+--dec_layers 6 \
+--dim_feedforward 2048 \
+--hidden_dim 256 \
+--dropout 0.1 \
+--nheads 8 \
+--num_queries 90 \
+--focal_alpha 0.25 \
+--focal_gamma 2 \
+--dataset_root '/data1/gengyun.jia/GAIC_journal/' \
+--image_size_test 600 \
+--good_thresh 4.0 \
+--nms_thresh 0 \
+--topk_num 90 \
+--soft_iou_thresh 0.85 \
+--soft_bound 0.5 \
+--use_valid_smooth 0 \
+--output_dir '/data1/ConditionalDETR_ImageCropping/results/GAICv2_res/' \
+--resume '/data1/ConditionalDETR_ImageCropping/ConditionalDETR_r50dc5_epoch50.pth' \
